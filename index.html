@@ -1,125 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter|Pacifico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Gallery</title>
+    <title>Book Now - Paws &amp Play</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            display: flex;
-            justify-content: center;
-           
-          align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-      .content {
-            justify-content: center;
-            align-items: center;
-            height: calc(100vh - 100px); 
-            flex-direction: column; 
-      } 
-      
-      nav {
-            background-color: #ffe8ff;
-            font-family: "Inter", sans-serif;
-            padding: 10px;
-            text-align: center;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #3c55a5;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
+      img {
+        margin-top: 10pt;
+        max-width: 100%;
+        height: auto;
+        box-align: center; 
       }
-        .gallery {
-            position: relative;
-            width: 600px;
-            height: 400px;
-            overflow: hidden;
-            border: 2px solid #ccc;
-            border-radius: 10px;
-            background-color: #fff;
+      body {
+        margin: 0;
+        background-color: #f7ffff;
+      }
+      nav {
+        background-color: #ffeefa;
+        font-family: "Inter", sans-serif;
+        padding: 10px;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      }
+      nav a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: #3c55a5;
+        font-weight: bold;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
+        .grid {
+            display: grid;
+          box-align: center; 
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 10px; 
+            width: 80%; 
+             
+          margin: 0 auto
         }
-        .images {
-            display: flex;
-            transition: transform 0.5s ease;
-            width: 100%;
-        }
-        .image {
-            min-width: 100%;
-            height: 100%;
-            box-sizing: border-box;
-        }
-        button {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-        }
-        .prev {
-            left: 10px;
-        }
-        .next {
-            right: 10px;
-        }
+        .grid img {
+          
+            width: 100%; 
+          height: auto;
+            border-radius: 5px; 
+          
+        } .title {
+        padding-top: 80pt;
+          box-align: center; 
+      }
+
+      .title img {
+        max-width: 60%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        box-align: center; 
+        padding-bottom: 10pt 
+      }
+      h1 {
+        font-family: "Pacifico", sans-serif;
+        color: #3c55a5;
+        font-size: 40pt;
+        text-align: Center
+      }
+
+      h2 {
+        font-family: "Inter", sans-serif;
+        color: #3c55a5;
+        font-size: 28pt;
+        font-weight: bold;
+        text-align: center; 
+      }
+
+      h3 {
+        font-family: "Inter", sans-serif;
+        color: #3c55a5;
+        font-size: 18pt;
+        font-weight: bold;
+        text-align: center; 
+      }
+      
+      h4 {
+        font-family: "Inter", sans-serif;
+        color: #ffe8ff;
+        font-size: 30pt;
+        text-align: Center
+      }
+
+      p {
+        font-family: "Inter", sans-serif;
+        color: #3c55a5;
+        font-size: 15pt;
+        text-align: center;
+        padding: 20pt; 
+       
+      }
+      .horizontal-line {
+        width: 100%; 
+        height: 2px; 
+        background-color: #3c55a5; 
+        margin-top: 65px; 
+        margin-bottom: 65px;
+      }
+      .container {
+    max-width: 800px;
+    margin: 90px auto 0; 
+        margin-top: 0pt;
+    padding: 20px;
+        padding-bottom: 5px;
+    background-color: #ffeefa;
+    border-radius: 0px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-family: "Inter", sans-serif;
+    text-align: center;
+}
+      
     </style>
 </head>
 <body>
   
-   <nav>
-        <a href="https://netnet.studio/?gh=AndreaSobiesiak/Practice">Home</a>
-        <a href="https://netnet.studio/?gh=AndreaSobiesiak/About-Us">Services</a>
-        <a href="#Look Book">Look Book</a>
-        <a href="https://netnet.studio/?gh=AndreaSobiesiak/Book-Now">Book Now</a> 
-    </nav>
-    <div class="content" id="Look Book">
-        <img src="TitleCard.jpg" alt="Paw's & Play title with dogs running in a field in the background"> <br> 
-    </div> 
+<nav>
+    <a href="https://netnet.studio/?gh=AndreaSobiesiak/Practice">Home</a>
+    <a href="https://netnet.studio/?gh=AndreaSobiesiak/About-Us">Services</a>
+    <a href="https://netnet.studio/?gh=AndreaSobiesiak/Practice">Look Book</a>
+    <a href="https://netnet.studio/?gh=AndreaSobiesiak/Book-Now">Book Now</a> 
+</nav>
 
-<div class="gallery">
-    <div class="images" id="imageContainer">
-        <img src="image1.jpg" class="image" alt="Image 1">
-        <img src="image2.jpg" class="image" alt="Image 2">
-        <img src="image3.jpg" class="image" alt="Image 3">
-    </div>
-    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+<div class="title" id="Look Book">
+    <img src="titlecard-removebg-preview.png" alt="Paw's & Play title with paw prints"> 
+</div> 
+  
+  <div class="horizontal-line"></div>
+ <h1>About Us</h1>
+   <div class="container">
+  <p>
+    Paws &amp Play is a family-owned and operated business, proudly serving dogs for over a decade. We are dedicated to providing your dog with the best experience possible here at the farm. Paws &amp Play is more than just a daycare—we offer a full day of socializing, physical activity, and play. Your dog will have the chance to interact with and bond with other dogs of similar size, fostering essential socialization skills. This interaction is vital for your dog’s health, and Paws &amp Play offers the perfect environment for your pup to make lifelong friends. Our team of dog experts ensure your dog’s safety while guaranteeing they have the time of their life here at the farm!
+  </p>
+  </div>
+  
+  <div class="horizontal-line"></div>
+ <h1>Look Book</h1>
+  <h3>
+    New pictures every week. Your dog could be featured next! <br>  
+
+  </h3>
+
+<div class="grid">
+    <img src="image1.jpg" alt="Two lab dogs sitting together">
+    <img src="image2.jpg" alt="Black dog outside with his tongue out.">
+    <img src="image3.jpg" alt="Golden dog outside in the snow.">
+    <img src="image4.jpg" alt="Small brown dog biting a flower"> 
+    <img src="image5.jpg" alt="Two dogs, one big one barking and one small one.">
+    <img src="image6.jpg" alt="Close up shot of a brown lab outside.">
+    <img src="image7.jpg" alt="Close up of medium sized golden dog with it's tongue out">
+    <img src="image8.jpg" alt="Close up of poodle outside.">
+    <img src="image9.jpg" alt="Small puppy sitting outside."> 
+   <img src="image10.jpg" alt="German Shepard dog sitting in a kid sized pool outside.">
+    <img src="image11.jpg" alt="Close up of a small white dog outside with it's tongue out."> 
+   <img src="image12.jpg" alt="Small dog jumping mid-air.">
+  
+  
 </div>
+  
+  <div class="horizontal-line"></div>
+ 
 
-<script>
-    let currentSlide = 0;
-
-    function moveSlide(direction) {
-        const slides = document.querySelectorAll('.image');
-        const totalSlides = slides.length;
-        
-        currentSlide += direction;
-
-        if (currentSlide < 0) {
-            currentSlide = totalSlides - 1; // Loop to last slide
-        } else if (currentSlide >= totalSlides) {
-            currentSlide = 0; // Loop to first slide
-        }
-
-        const imageContainer = document.getElementById('imageContainer');
-        const offset = -currentSlide * 100; // Move to the current slide
-        imageContainer.style.transform = `translateX(${offset}%)`;
-    }
-</script>
+  
+   <img src="footer3.jpg" alt="Footer with phone number, address, socials, and email.">
 
 </body>
 </html>
